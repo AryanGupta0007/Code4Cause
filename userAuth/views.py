@@ -13,7 +13,7 @@ def student_signup(request):
         course = request.POST["course"]
         year = request.POST["year"]
         mobile_no = request.POST["mobile-number"]
-
+    
 
 def student_login(request):
     pass
