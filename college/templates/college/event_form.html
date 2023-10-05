@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    
+    <title>Event Details</title>
 </head>
+<header>
+<link rel="header" type="text/html" href="C:\Users\AKANKSHA\OneDrive\Desktop\Projects\Code4Cause\college\templates\college\header.html"/>
+</header>
 <body>
+        <center><h1>Event Details</h1></center>
+        <form method="post">
+           
+            <center><div class="container">
+
+                    <img src="{% static 'avatar_img1.jpg' %}" alt="Avatar" class="avatar">
+                </div>
+                
+                <required> <label for =eventname><b>Event Name :  </b></label></required>
+                <input type="event-name" placeholder="Enter Your Event name" name="event-name" float="right"  required>
+                <br> 
+
+                <required> <label for =eventdesc><b>Event Description :  </b></label></required>
+                <input type="event-desc" placeholder="Enter Your Event Description" name="event-desc" float="right"  required>
+                <br> 
+
+                <required> <label for =eventdate><b>Event Date & Time :  </b></label></required>
+                <input type="event-date" placeholder="Enter Your Event Date and Time" name="event-date" float="right"  required>
+                <br>
+
+                <button type="Submit"><b>Submit</b></button>
+
+            </div>
+            </center>
+        </form>
+                <!-- <br>     
+
+                Don't have an accounct <a href="http://localhost:8000/signup/"> register </a>
+
+                <br> -->
+                
+    
+
+
+                <link rel="stylesheet" type="text/css" href="C:\Users\AKANKSHA\OneDrive\Desktop\Projects\Code4Cause\college\templates\college\footer.html"/>
 
 </body>
 </html>
