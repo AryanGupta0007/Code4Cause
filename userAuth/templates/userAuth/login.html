@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <title>Signup Page</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color:rgb(235, 173, 235);
+            }
+            button{
+                background-color:palevioletred;
+                width: 25%;
+                padding: 5px;
+                color: rgb(0, 0, 0);
+                border: sandybrown;
+                float: center;
+                font-size: 25px;
+            }
+            label{
+                font-size: 15px;
+            }
+            form{
+                border: 3px solid ridge;
+            }
+            input[type=email],input[type=password]{
+                width: 50%;
+                font-size: 15px;
+                margin: 8px 0px;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 2px solid rgb(16, 219, 16);
+                box-sizing: border-box;
+            }
+            button:hover{
+                opacity:0.7;
+
+            }
+            .container{
+                padding: 50px;
+                background-color:rebeccapurple;
+            }
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+              
+            img.avatar {
+                width: 20%;
+                border-radius: 50%;
+            }  
+            .header{
+    border: 1% solid black;
+    height: 85%auto;
+    }
+    .menu-bar{background-color:blanchedalmond;
+    height: 10%;
+    width: 100%;
+    display: inline-flex; 
+    }
+    .menu-bar ul{
+    display:inline-flex;
+    list-style: none;
+    margin-bottom: 5px;
+    }
+    .menu-bar ul li {
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    height: 19px fit-content;
+    width: 60px fit-content;
+    margin-left:10px;
+    padding: 10px;
+    }
+    .menu-bar ul li a{
+    height: 52px fit-content;
+    width: 110px fit-content;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 2px;
+    margin-bottom: 90px;
+    }
+    .menu-bar ul li:hover {
+    background-color: green;
+    border-radius: 8px;
+    height: 19px fit-content;
+    width: 60px fit-content;
+    margin-left:10px;
+    padding: 10px;
+    }
+    .foot-bar{background-color:rgb(238, 218, 218);
+    height: 62px fit-content;
+    width: 59% fit-content;
+    float: right;
+    }
+    .foot-bar ul{
+    display:inline-flex;
+    list-style: none;
+    margin-bottom: 5px;
+    }
+    .foot-bar ul li {
+    background-color: rgb(233, 227, 220);
+    border-radius: 8px;
+    height: 19px fit-content;
+    width: 60px  fit-content;
+    margin-left:10px;
+    padding: 10px;
+    }
+    .foot-bar ul li a{
+    height: 52px fit-content;
+    width: 110px fit-content;
+    text-decoration: none;
+    color: rgb(23, 2, 43);
+    font-size: 18px;
+    padding: 2px;
+    margin-bottom: 90px;
+    }
+    .foot-bar ul li:hover {
+    background-color: darkgrey;
+    border-radius: 100px;
+    height: 19px fit-content;
+    width: 60px fit-content;
+    margin-left:10px;
+    padding: 10px;
+    }
+    .footer{
+    border: 1px solid rgb(17, 17, 17);
+    height: 100px fit-content;
+    }
+    .open-button {
+  background-color: #555;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  width: 180px;
+}
+.form-popup {
+  display: none;
+  position:sticky;
+  bottom: 50px;
+  right: 20px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: fit-content;
+  padding: 40px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=email], .form-container input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border:chocolate;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=email]:focus, .form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+        </style>
+    </head>
+   
+<header>
+
+<div class="header">
+
+<div class="menu-bar">
+<ul>   
+<li class="active" ><a href="http://localhost:8000/">Home</a></li>
+<li><a href="http://localhost:8000/about_us/">About</a></li>
+<li><a href="http://localhost:8000/advocate">Advocates</a></li>
+<li><a href="http://localhost:8000/solution">Solutions</a></li>
+</ul>
+</div>
+</div>
+
+</header>
+    <body>
+        <center><h1>Login Form</h1></center>
+        <form action="#" method="post">
+           
+            <center><div class="container">
+                <div class="imgcontainer">
+
+                    <img src="{% static 'avatar_img1.jpg' %}" alt="Avatar" class="avatar">
+                </div>
+                
+                <label for ='Email'><b>UserEmail :  </b></label>
+                <input type="Email" placeholder="Enter Your Email" name="Email" float="right"  required>
+                <br>  
+
+                <label for='Password'><b>Password : </b></label>
+                <input type="Password" placeholder="Enter Password" name="Password" required>
+                <br>  
+                <button type="Submit"><b>Login</b></button>
+                <br>     
+
+                Don't have an accounct <a href="http://localhost:8000/signup/"> register </a>
+
+                <br>
+                
+            </div></center>
+        </form>
+    </body>
+     <footer class="footer mt-auto text-white-50 z-index-2">
+        <div class="container-fluid bg-dark">
+            <div class="container py-12 pe-2">
+                <div class="row">
+                    <div class="col-lg-8 mt-2 mt-md-0">
+                        <p class="mb-4"> Disclaimer: </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
