@@ -21,14 +21,14 @@
             form{
                 border: 3px solid ridge;
             }
-            input[type=email],input[type=password],[type=UserName],[type=CollegeName],[type=Phone],[type=PinCode],[type=CollegeName],[type=UniversityName]{
+            input[type=email],input[type=password],[type=username],[type=name],[type=college],[type=mobile_no],
+            [type=course],[type=conf-password],[type=university],[type=year]{
                 width: 50%;
                 font-size: 15px;
                 margin: 8px 0px;
                 padding: 12px 20px;
                 display: inline-block;
-                border: 
-                box-sizing: border-box;
+                border: border-box;
             }
             button:hover{
                 opacity:0.7;
@@ -125,26 +125,7 @@
     border: 1px solid rgb(17, 17, 17);
     height: 100px fit-content;
     }
-    .open-button {
-  background-color: #555;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  width: 180px;
-}
-.form-popup {
-  display: none;
-  position:sticky;
-  bottom: 50px;
-  right: 20px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
+
 
 /* Add styles to the form container */
 .form-container {
@@ -155,9 +136,9 @@
 
 /* Full-width input fields */
 .form-container input[type=email], .form-container input[type=text] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  width: 25%;
+  padding: 10px;
+  margin: 25px 0 40px 0;
   border:chocolate;
   background: #f1f1f1;
 }
@@ -170,7 +151,7 @@
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #04AA6D;
+  background-color: black;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -180,24 +161,19 @@
   opacity: 0.8;
 }
 
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
         </style>
     </head>
    
 <header>
 
 <div class="header">
-
+<P> Code4Cause </P>
 <div class="menu-bar">
 <ul>   
-<li class="active" ><a href="http://localhost:8000/">Home</a></li>
-<li><a href="http://localhost:8000/about_us/">About</a></li>
-<li><a href="http://localhost:8000/advocate">Advocates</a></li>
-<li><a href="http://localhost:8000/solution">Solutions</a></li>
+<li class="active" ><a href="">Home</a></li>
+<li><a href="">About</a></li>
+<li><a href="">##</a></li>
+<li><a href="">##</a></li>
 </ul>
 </div>
 </div>
@@ -214,41 +190,49 @@
                 </div>
                 
                 <required> <label for ='Name'><b>Name :  </b></label></required>
-                <input type="Name" placeholder="Enter Your name" name="Name" float="right"  required>
+                <input type="name" placeholder="Enter Your name" name="name" float="right"  required>
                 <br> 
 
                 <required> <label for ='UserName'><b>UserName :  </b></label></required>
-                <input type="UserName" placeholder="Enter Your UserName" name="UserName" float="right"  required>
+                <input type="username" placeholder="Enter Your UserName" name="username" float="right"  required>
                 <br> 
 
                 <required> <label for ='Email'><b>Email :  </b></label></required>
-                <input type="Email" placeholder="Enter Your Email" name="Email" float="right"  required>
+                <input type="email" placeholder="Enter Your Email" name="Email" float="right"  required>
                 <br>  
                 
                 <required> <label for ='Phone'><b>Phone Number :  </b></label></required>
-                <input type="phone" placeholder="Enter Your phone" name="phone" float="right"  required>
+                <input type="mobile_no" placeholder="Enter Your phone" name="mobile_no" float="right"  required>
                 <br> 
 
                 <required> <label for ='CollegeName'><b>College Name :  </b></label></required>
-                <input type="CollegeName" placeholder="Enter Your CollegeName" name="CollegeName" float="right"  required>
+                <input type="college" placeholder="Enter Your College Name" name="college" float="right"  required>
                 <br> 
 
                 <required> <label for ='UniversityName'><b>University Name :  </b></label></required>
-                <input type="UniversityName" placeholder="Enter Your UniversityName" name="UniversityName" float="right"  required>
+                <input type="university" placeholder="Enter Your University Name" name="university" float="right"  required>
                 <br> 
 
+                <required> <label for ='CourseName'><b>Course Name :  </b></label></required>
+                <input type="course" placeholder="Enter Your UniversityName" name="course" float="right"  required>
+                <br>`
+
+                <required> <label for ='Year'><b>Year :  </b></label></required>
+                <input type="year" placeholder="Enter Your Year of College" name="year" float="right"  required>
+                <br>
+
                 <label for='Password'><b>Password : </b></label>
-                <input type="Password" placeholder="Enter Password" name="Password" required>
+                <input type="password" placeholder="Enter Password" name="password" required>
                 <br>  
 
-                <label for='Password'><b>Confirm Password : </b></label>
-                <input type="Password" placeholder="Enter Password" name="Password" required>
+                <label for='Password'><b>Confirm Your Password : </b></label>
+                <input type="conf-password" placeholder="Enter Password" name="conf-password" required>
                 <br>  
 
 
                 <button type="Submit"><b>Register</b></button>
 
-            </div></center>
+            </div>
         </form>
                 <!-- <br>     
 
